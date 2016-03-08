@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["Dimitri Sabadie <dimitri.sabadie@gmail.com>"]
 
 [dependencies]
+glfw = "0.3.0"
