@@ -8,7 +8,7 @@ const HEIGHT: u32 = 600;
 fn main() {
   let mut glfw = glfw::init(glfw::FAIL_ON_ERRORS).unwrap();
   let (mut window, events) =
-    glfw.create_window(WIDTH, HEIGHT, "Hello this is window", glfw::WindowMode::Windowed)
+    glfw.create_window(WIDTH, HEIGHT, "Hello, this is dawg", glfw::WindowMode::Windowed)
         .expect("Failed to create GLFW window.");
   window.make_current();
 
