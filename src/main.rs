@@ -11,7 +11,9 @@ fn main() {
   let (mut window, events) =
     glfw.create_window(WIDTH, HEIGHT, "Hello, this is dawg", glfw::WindowMode::Windowed)
         .expect("Failed to create GLFW window.");
+
   window.make_current();
+  window.set_key_polling(true);
 
   while !window.should_close() {
     window.swap_buffers();
