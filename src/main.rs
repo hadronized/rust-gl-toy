@@ -17,10 +17,12 @@ fn main() {
     window.swap_buffers();
 
     glfw.poll_events();
+
     for (_, event) in glfw::flush_messages(&events) {
       println!("{:?}", event);
+
       match event {
-        glfw::WindowEvent::Key(Key::Escape, _, Action::Press, _) => {
+        glfw::WindowEvent::Key(key, _, Action::Press, _) if key == Key::Escape || key == Key::Space => {
           window.set_should_close(true)
         },
         _ => {}
